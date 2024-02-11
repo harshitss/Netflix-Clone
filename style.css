@@ -1,23 +1,137 @@
-*{
+
+
+* {
     padding: 0;
     margin: 0;
+    font-family: 'Netflix Sans';
+    color: white;
 }
-.main{
+body{
+    background-color: rgb(25, 25, 25);
+    
+}
+.main {
     background-image: url(assets/bg.jpg);
     height: 80vh;
     background-position: center center;
     position: relative;
-    background-size: (1200px,100vw);
+    background-size: (1200px, 100vw);
     background-repeat: no-repeat;
 }
-.main .bg{
+
+.main .bg {
     background-color: black;
     height: 80vh;
     width: 100%;
     opacity: 0.7;
     position: absolute;
     top: 0;
+
 }
-nav{
+
+nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    height: 55px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+
+}
+
+.logo img {
+    height: 40px;
+}
+
+.login-nav {
+    border: none;
+    border-radius: 3px;
+    background-color: red;
+    padding: 8px 13px;
+    margin: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+select {
+    border: 1px solid white 0.3;
+    border-radius: 3px;
+    background-color: hsl(0, 0%, 0%, 0.3);
+    font-size: 1rem;
+    padding: 7px 10px 7px 30px;
+}
+
+select:focus {
+    border: 1px solid white;
+
+}
+
+.login img {
+    border: none;
+    position: relative;
+    left: 30px;
+    top: 2px;
+}
+
+.heading {
+    position: relative;
+    text-align: center;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.heading h1 {
+    font-size: 3rem;
+    font-weight: 1000;
+}
+
+.heading h2 {
+    font-weight:400;
+}
+
+.heading h3 {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.heading input {
+    padding: 1rem;
+    background: transparent;
+    border: 1px solid hsl(0, 100%, 100%, 0.5);
+    border-radius: 4px;
+    width: 400px;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.heading input:focus {
+    border: 1px solid white;
+
+}
+.headingbtn{
+    background-color: red;
+    border: none;
+    margin: 2px;
+    border-radius: 3px;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.headingbtn i{
+    padding: 5px;
+}
+.headinglabel{
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1rem;
+    right: 29.7rem;
+    transition: 0.1s ease;
+}
+.input:focus ~ label{
+    transform: translate(-0.7rem,-1rem) scale(0.8);
 }

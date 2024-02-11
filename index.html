@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href=netflixfont.css rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="main">
+        <div class="bg"></div>
         <nav>
             <span class="logo">
                 <img src="assets/logo.svg" alt="">
             </span>
-            <div class="language"></div>
-            <button class="login-nav">Sign In</button>
+            <span class="login">
+                <img src="assets/language-icon.svg" alt="">
+                <select name="Language-Select" id="language">
+                    <option lang="en" value="en-IN">English</option>
+                    <option lang="hi" value="hi-IN">हिन्दी</option>
+                </select>
+                <button class="login-nav">Sign In</button>
+            </span>
         </nav>
-        <div class="bg"></div>
+        <section>
+            <div class="heading">
+                <h1>Enjoy big movies, hit series and more from ₹149.</h1>
+                <h2>Join today. Cancel anytime.</h2>
+                <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                <div>
+                    <input type="text" id="headingtext" class="input" placeholder=" ">
+                    <label for="headingtext" class="headinglabel">Email Address</label>
+                    <button class="headingbtn">Get Started <i class="fa-solid fa-angle-right"></i></button>
+
+                </div>
+            </div>
+        </section>
 
     </div>
+    
+    <script src="https://kit.fontawesome.com/4b2ed1e6b4.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
