@@ -1,137 +1,225 @@
-
-
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Netflix Sans';
-    color: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Netflix Sans";
+  color: white;
 }
-body{
-    background-color: rgb(25, 25, 25);
-    
+
+body {
+  background-color: rgb(25, 25, 25);
 }
+
 .main {
-    background-image: url(assets/bg.jpg);
-    height: 80vh;
-    background-position: center center;
-    position: relative;
-    background-size: (1200px, 100vw);
-    background-repeat: no-repeat;
+  background-image: url(assets/bg.jpg);
+  height: 80vh;
+  background-position: center center;
+  position: relative;
+  background-size: (1200px, 100vw);
+  background-repeat: no-repeat;
 }
 
 .main .bg {
-    background-color: black;
-    height: 80vh;
-    width: 100%;
-    opacity: 0.7;
-    position: absolute;
-    top: 0;
-
+  background-color: black;
+  height: 80vh;
+  width: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60vw;
-    height: 55px;
-    margin: auto;
-    padding: 20px;
-    position: relative;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60vw;
+  height: 55px;
+  margin: auto;
+  padding: 20px;
+  position: relative;
 }
 
-.logo img {
-    height: 40px;
+.logo > img {
+  height: 40px;
 }
 
 .login-nav {
-    border: none;
-    border-radius: 3px;
-    background-color: red;
-    padding: 8px 13px;
-    margin: 15px;
-    font-weight: 700;
-    text-align: center;
+  border: none;
+  border-radius: 3px;
+  background-color: red;
+  padding: 8px 13px;
+  margin: 15px;
+  font-weight: 700;
+  text-align: center;
 }
 
 select {
-    border: 1px solid white 0.3;
-    border-radius: 3px;
-    background-color: hsl(0, 0%, 0%, 0.3);
-    font-size: 1rem;
-    padding: 7px 10px 7px 30px;
+  border: 1px solid white 0.3;
+  border-radius: 3px;
+  background-color: hsl(0, 0%, 0%, 0.3);
+  font-size: 1rem;
+  padding: 7px 10px 7px 30px;
 }
 
 select:focus {
-    border: 1px solid white;
-
+  border: 1px solid white;
 }
 
-.login img {
-    border: none;
-    position: relative;
-    left: 30px;
-    top: 2px;
+.login > img {
+  border: none;
+  position: relative;
+  left: 30px;
+  top: 2px;
+  pointer-events: none;
 }
 
 .heading {
-    position: relative;
-    text-align: center;
-    margin-top: 20vh;
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
+  position: relative;
+  text-align: center;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
 }
 
-.heading h1 {
-    font-size: 3rem;
-    font-weight: 1000;
+.heading > h1 {
+  font-size: 3rem;
+  font-weight: 1000;
 }
 
-.heading h2 {
-    font-weight:400;
+.heading > h2 {
+  font-weight: 400;
 }
 
-.heading h3 {
-    font-size: 1.25rem;
-    font-weight: normal;
+.heading > h3 {
+  font-size: 1.25rem;
+  font-weight: normal;
 }
 
-.heading input {
-    padding: 1rem;
-    background: transparent;
-    border: 1px solid hsl(0, 100%, 100%, 0.5);
-    border-radius: 4px;
-    width: 400px;
-    font-size: 1rem;
-    font-weight: 500;
-    position: relative;
+.input {
+  padding: 1rem;
+  background: transparent;
+  border: 1px solid hsl(0, 100%, 100%, 0.5);
+  border-radius: 4px;
+  width: 400px;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
 }
 
-.heading input:focus {
-    border: 1px solid white;
+.input:focus {
+  border: 1px solid white;
+}
 
+.headingbtn {
+  background-color: red;
+  border: none;
+  margin: 2px;
+  border-radius: 3px;
+  padding: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
-.headingbtn{
-    background-color: red;
-    border: none;
-    margin: 2px;
-    border-radius: 3px;
-    padding: 12px;
-    font-size: 1.2rem;
-    font-weight: bold;
+
+.headingbtn > i {
+  padding: 5px;
 }
-.headingbtn i{
-    padding: 5px;
+
+.headinglabel {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1rem;
+  right: 29.7rem;
+  transition: 0.1s ease;
+  overflow: hidden;
 }
-.headinglabel{
-    position: absolute;
-    bottom: 1.2rem;
-    left: 1rem;
-    right: 29.7rem;
-    transition: 0.1s ease;
+
+.input:focus ~ label {
+  transform: translate(-0.7rem, -1rem) scale(0.8);
 }
-.input:focus ~ label{
-    transform: translate(-0.7rem,-1rem) scale(0.8);
+
+.tv-outer {
+  background-color: black;
+  position: relative;
+  /* z-index: -1; */
+  margin: 5px 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+}
+
+.tvinner {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  background-color: transparent;
+}
+
+.text {
+  height: 25vh;
+  width: 30vw;
+}
+
+.text > h1 {
+  font-size: 3.25rem;
+  font-weight: 1000;
+  margin-bottom: 10px;
+}
+
+.text > p {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.maintv {
+  /* background-image: url(assets/tv.png); */
+  background-repeat: no-repeat;
+  height: 30rem;
+  background-size: contain;
+  width: 35rem;
+  overflow: hidden;
+  position: relative;
+}
+.maintv > img{
+  position: relative;
+  z-index: 1;
+}
+
+.maintv > video {
+  aspect-ratio: 4/3;
+  height: 37.5vh;
+  position: absolute;
+  bottom: 4.8rem;
+  right: 0.8rem;
+  z-index: 0;
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+  background-color: black;
+  margin-bottom: 5px;
+}
+.image-container{
+  position: relative;
+}
+
+.image-container > video {
+  z-index: -1;
+  position: absolute;
+  left: 5rem;
+  top: 3rem;
+  height: 14.5rem;
+  width: 30rem;
+}
+
+.image-container > img {
+  overflow: hidden;
 }
